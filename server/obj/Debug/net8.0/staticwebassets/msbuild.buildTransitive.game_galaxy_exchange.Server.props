@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\game_galaxy_exchange.Server.props" />
+</Project>
