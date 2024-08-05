@@ -1,6 +1,0 @@
-@game_galaxy_exchange.Server_HostAddress = http://localhost:5071
-
-GET {{game_galaxy_exchange.Server_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
