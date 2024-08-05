@@ -1,0 +1,154 @@
+.add-game-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    padding-top: 50px;
+}
+
+.add-game-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+    .add-game-form h2 {
+        margin-bottom: 20px;
+        font-size: 24px;
+        color: #333;
+    }
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #555;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+
+    .form-group textarea {
+        resize: vertical;
+    }
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+    }
+
+.success-message {
+    color: green;
+    margin-top: 10px;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+@media (max-width: 1024px) {
+    .add-game-container {
+        padding-top: 40px;
+    }
+
+    .add-game-form {
+        padding: 15px;
+        max-width: 450px;
+    }
+
+        .add-game-form h2 {
+            font-size: 22px;
+        }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        padding: 8px;
+        font-size: 15px;
+    }
+
+    .btn-primary {
+        padding: 8px 18px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .add-game-container {
+        padding-top: 30px;
+    }
+
+    .add-game-form {
+        padding: 10px;
+        max-width: 400px;
+    }
+
+        .add-game-form h2 {
+            font-size: 20px;
+        }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .btn-primary {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .add-game-container {
+        padding-top: 20px;
+        height: auto;
+    }
+
+    .add-game-form {
+        padding: 10px;
+        max-width: 350px;
+    }
+
+        .add-game-form h2 {
+            font-size: 18px;
+        }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        padding: 6px;
+        font-size: 13px;
+    }
+
+    .btn-primary {
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+}

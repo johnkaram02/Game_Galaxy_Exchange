@@ -1,0 +1,60 @@
+.register-container {
+    background-image: url('./public/Register.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .register-container .MuiCard-root {
+        background: rgba(255, 255, 255, 0.85);
+        border-radius: 15px;
+        padding: 20px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    .register-container .MuiTypography-h3 {
+        color: #3f51b5;
+        font-weight: bold;
+    }
+
+    .register-container .MuiButton-contained {
+        background: #3f51b5;
+        color: #fff;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+
+        .register-container .MuiButton-contained:hover {
+            background: #303f9f;
+        }
+
+@media (max-width: 768px) {
+    .register-container {
+        padding: 15px;
+    }
+
+        .register-container .MuiCard-root {
+            padding: 15px;
+        }
+}
+
+@media (max-width: 480px) {
+    .register-container {
+        padding: 10px;
+    }
+
+        .register-container .MuiCard-root {
+            padding: 10px;
+        }
+
+        .register-container .MuiTypography-h3 {
+            font-size: 24px;
+        }
+
+        .register-container .MuiButton-contained {
+            font-size: 14px;
+        }
+}

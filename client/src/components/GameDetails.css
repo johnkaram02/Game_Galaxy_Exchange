@@ -1,0 +1,222 @@
+.game-details {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    padding: 20px;
+    gap: 20px;
+}
+
+.message-box {
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    width: 90%;
+    max-width: 1200px;
+    border-radius: 5px;
+}
+
+    .message-box.success {
+        color: green;
+        border: 2px solid green;
+    }
+
+    .message-box.error {
+        color: red;
+        border: 2px solid red;
+    }
+
+.game-photo-container,
+.game-inf {
+    flex: 1;
+    max-width: 300px;
+}
+
+.game-photo {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.game-inf {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    text-align: center;
+}
+
+    .game-info p {
+        margin: 10px 0;
+    }
+
+.actions {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+    justify-content: center;
+}
+
+    .actions button {
+        padding: 15px 30px;
+        font-size: 18px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+.buy-button {
+    background-color: #28a745;
+    color: white;
+}
+
+    .buy-button:hover {
+        background-color: #218838;
+    }
+
+.wishlist-button {
+    background-color: #dc3545;
+    color: white;
+}
+
+    .wishlist-button:hover {
+        background-color: #c82333;
+    }
+
+.modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+    .close-button:hover {
+        color: #000;
+    }
+
+.reviews-section {
+    flex: 1;
+    max-width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    text-align: center;
+}
+
+    .reviews-section h2 {
+        margin-bottom: 20px;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .reviews-section form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+        .reviews-section form label {
+            width: 100%;
+            text-align: left;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .reviews-section form select,
+        .reviews-section form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+
+        .reviews-section form button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+            .reviews-section form button:hover {
+                background-color: #0056b3;
+            }
+
+.reviews-list {
+    width: 100%;
+    text-align: left;
+}
+
+.review-item {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+    .review-item p {
+        margin: 5px 0;
+    }
+
+@media (min-width: 768px) {
+    .game-details {
+        flex-direction: row;
+    }
+
+    .game-inf,
+    .reviews-section {
+        max-width: 500px;
+    }
+
+    .actions {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1024px) {
+    .game-inf,
+    .reviews-section {
+        max-width: 600px;
+    }
+}

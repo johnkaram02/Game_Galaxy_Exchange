@@ -1,0 +1,39 @@
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+.avatar-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+@media (max-width: 768px) {
+    .profile-container {
+        padding: 15px;
+    }
+
+    .avatar-image {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-container {
+        padding: 10px;
+    }
+
+    .avatar-image {
+        width: 60px;
+        height: 60px;
+    }
+}
