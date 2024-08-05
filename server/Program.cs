@@ -141,6 +141,7 @@ if (app.Environment.IsDevelopment())
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "game_galaxy_exchange API V1");
         c.OAuthClientId("swaggerui");
         c.OAuthAppName("Swagger UI");
+        c.RoutePrefix = string.Empty;
     });
     app.UseStaticFiles();
     app.UseDeveloperExceptionPage();
