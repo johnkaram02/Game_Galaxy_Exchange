@@ -3,7 +3,7 @@ import { Container, Box, Typography, TextField, Button, Card, CardContent, Avata
 import { useNavigate } from 'react-router-dom';
 import Navbar from './Navbar';
 import './Profile.css';
-import './App.css';
+import '../App.css';
 
 function Profile() {
     const [username, setUsername] = useState('');
